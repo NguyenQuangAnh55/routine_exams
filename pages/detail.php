@@ -4,7 +4,7 @@
     $password = "admin123";
     
      isset($_GET["id"]) ? $id = $_GET["id"] : $id = "";
-    
+       
     try {
     	$pdo = new PDO($dsn, $user, $password);
     	$sql = "select * from restaurants where id=?";
