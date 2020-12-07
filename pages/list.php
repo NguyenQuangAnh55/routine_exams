@@ -4,7 +4,7 @@
     $password = "admin123";
     
      isset($_GET["area"]) ? $area = $_GET["area"] : $area = "";
-        
+    
     try {
     	$pdo = new PDO($dsn, $user, $password);
     	$sql = "select * from restaurants where area=?";
@@ -101,4 +101,4 @@
 	</footer>
 	
 </body>
-</html>s
+</html>
